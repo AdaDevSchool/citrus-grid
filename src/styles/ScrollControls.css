@@ -17,6 +17,9 @@
     transform 0.2s;
   cursor: pointer;
 }
+.scroll-control-btn[hidden] {
+  display: none;
+}
 .scroll-control-btn:hover {
   color: var(--wp-accent);
   border-color: var(--wp-accent);

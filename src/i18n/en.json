@@ -114,5 +114,20 @@
     "sortByName": "By name",
     "sortByCount": "By count",
     "backToTop": "Back to top"
+  },
+  "player": {
+    "title": "Music Player",
+    "toggle": "Expand or collapse player",
+    "play": "Play",
+    "pause": "Pause",
+    "stop": "Stop",
+    "prev": "Previous",
+    "next": "Next",
+    "shuffle": "Shuffle",
+    "order": "Sequential",
+    "loop": "Loop",
+    "volume": "Volume",
+    "playlist": "Playlist",
+    "empty": "No playable songs"
   }
 }

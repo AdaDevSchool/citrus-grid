@@ -1,5 +1,6 @@
 ---
 import '@/styles/main.css'
+import MusicPlayer from '@/components/MusicPlayer.astro'
 import ScrollControls from '@/components/ScrollControls.astro'
 import SearchModal from '@/components/SearchModal.astro'
 import SiteFooter from '@/components/SiteFooter.astro'
@@ -112,10 +113,11 @@ const jsonLd =
         >
           <slot />
         </main>
-        <ScrollControls lang={lang} showTocButton={showTocButton} />
       </div>
       <SiteFooter lang={lang} />
       <SearchModal lang={lang} />
+      <ScrollControls lang={lang} showTocButton={showTocButton} />
+      <MusicPlayer lang={lang} />
     </div>
 
     {siteConfig.statsScript && import.meta.env.PROD && (
@@ -131,6 +133,14 @@ const jsonLd =
       document.addEventListener('astro:before-swap', () => {
         ;(window as any).__pageLoadFired = false
       })
+
+      function syncTocFab() {
+        const fab = document.getElementById('toc-fab')
+        if (!fab) return
+        fab.hidden = !document.getElementById('toc-affix')
+      }
+      document.addEventListener('astro:after-swap', syncTocFab)
+      document.addEventListener('astro:page-load', syncTocFab)
 
       initTheme()
 

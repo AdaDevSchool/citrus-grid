@@ -114,5 +114,20 @@
     "sortByName": "名前順",
     "sortByCount": "件数順",
     "backToTop": "トップへ戻る"
+  },
+  "player": {
+    "title": "ミュージックプレイヤー",
+    "toggle": "プレイヤーを開閉",
+    "play": "再生",
+    "pause": "一時停止",
+    "stop": "停止",
+    "prev": "前の曲",
+    "next": "次の曲",
+    "shuffle": "シャッフル",
+    "order": "順番再生",
+    "loop": "ループ再生",
+    "volume": "音量",
+    "playlist": "プレイリスト",
+    "empty": "再生できる曲がありません"
   }
 }

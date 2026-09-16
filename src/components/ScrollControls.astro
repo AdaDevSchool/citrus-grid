@@ -13,19 +13,16 @@ const { lang = defaultLang, showTocButton = false } = Astro.props
 const t = useTranslations(lang)
 ---
 
-<nav class="fixed right-5 bottom-8 z-[90] flex flex-col gap-2 max-md:right-3 max-md:bottom-16">
-  {
-    showTocButton && (
-      <button
-        type="button"
-        id="toc-fab"
-        class="scroll-control-btn toc-btn"
-        title={t('post.toc')}
-      >
-        <Icon d={mdiTableOfContents} />
-      </button>
-    )
-  }
+<nav class="scroll-control-nav fixed right-5 bottom-8 z-[90] flex flex-col gap-2 max-md:right-3 max-md:bottom-16">
+  <button
+    type="button"
+    id="toc-fab"
+    class="scroll-control-btn toc-btn"
+    title={t('post.toc')}
+    hidden={!showTocButton}
+  >
+    <Icon d={mdiTableOfContents} />
+  </button>
   <button type="button" data-theme-toggle class="scroll-control-btn" title={t('header.switchToDark')}>
     <Icon d={mdiWeatherNight} />
   </button>

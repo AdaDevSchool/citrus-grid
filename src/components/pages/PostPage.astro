@@ -547,7 +547,11 @@ const postYear = post.data.published.getFullYear()
     activeHeading = ''
     tocModal = document.getElementById('toc-modal')
 
-    document.getElementById('toc-fab')?.addEventListener('click', openTocModal)
+    const tocFab = document.getElementById('toc-fab')
+    if (tocFab && !tocFab.dataset.bound) {
+      tocFab.dataset.bound = '1'
+      tocFab.addEventListener('click', openTocModal)
+    }
     document.getElementById('toc-close')?.addEventListener('click', closeTocModal)
     tocModal?.addEventListener('click', (e) => {
       if (e.target === tocModal) closeTocModal()

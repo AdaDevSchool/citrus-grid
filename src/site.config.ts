@@ -10,6 +10,17 @@ export interface FriendLinkRaw {
   icon?: string
 }
 
+export interface MusicTrack {
+  // 歌曲标题 Song title
+  title: string
+  // 音频地址：public/ 下的静态路径，或完整 http(s) URL
+  // Audio source: static path under public/, or a full http(s) URL
+  src: string
+  // 封面地址
+  // Cover art URL
+  cover?: string
+}
+
 export const siteConfig = {
   // 站点地址，用于 sitemap 、 RSS 等地方
   // Site URL used for sitemap, RSS, etc.
@@ -73,4 +84,20 @@ export const siteConfig = {
   // 根据文件保存时间自动更新文章的 updated 字段，仅在启动和构建时更新
   // Auto-update each post's `updated` field from its file save time only updated during startup and build
   autoUpdatePostUpdated: false,
+
+  // 右下角磁铁音乐播放器
+  // Magnet-style music player floating at the bottom-right corner
+  // enabled: 是否启用（默认开启）。playlist 为播放列表，仅读取封面/名称/时长，不含歌词
+  // playlist 留空 [] 时，构建期自动扫描 public/music/ 下的音频文件生成播放列表（推荐），
+  // 封面自动从音频元数据中提取；如需自定义标题/封面/顺序，可显式填写 playlist
+  //
+  // 显式指定示例（title/src 必填，cover 可选；不填 cover 时同样会从音频元数据提取封面）：
+  //   playlist: [
+  //     { title: 'name', src: '/music/name.flac', cover: '/music/name.webp' },
+  //     { title: 'test', src: '/music/test.flac' },
+  //   ] as MusicTrack[],
+  musicPlayer: {
+    enabled: false,
+    playlist: [] as MusicTrack[],
+  },
 }

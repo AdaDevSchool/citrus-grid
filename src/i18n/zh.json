@@ -114,5 +114,20 @@
     "sortByName": "按名称",
     "sortByCount": "按数量",
     "backToTop": "回到顶部"
+  },
+  "player": {
+    "title": "音乐播放器",
+    "toggle": "展开或收起播放器",
+    "play": "播放",
+    "pause": "暂停",
+    "stop": "停止",
+    "prev": "上一首",
+    "next": "下一首",
+    "shuffle": "随机播放",
+    "order": "顺序播放",
+    "loop": "循环播放",
+    "volume": "音量",
+    "playlist": "播放列表",
+    "empty": "暂无可播放的歌曲"
   }
 }

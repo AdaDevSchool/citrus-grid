@@ -11,6 +11,25 @@ export const mdiCalendarOutline =
 export const mdiCheck = 'M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z'
 export const mdiChevronLeft = 'M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z'
 export const mdiChevronRight = 'M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z'
+export const mdiChevronDown = 'M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z'
+export const mdiMusicNote =
+  'M12,3V10.55C11.41,10.21 10.73,10 10,10A4,4 0 0,0 6,14A4,4 0 0,0 10,18A4,4 0 0,0 14,14V7H18V3H12Z'
+export const mdiPause = 'M14,19H18V5H14M6,19H10V5H6V19Z'
+export const mdiPlay = 'M8,5.14V19.14L19,12.14L8,5.14Z'
+export const mdiPlaylistMusic =
+  'M15,6H3V8H15V6M15,10H3V12H15V10M3,16H9V14H3V16M17,16V22L22,19L17,16Z'
+export const mdiRepeat = 'M17,17H7V14L3,18L7,22V19H19V13H17M7,7H17V10L21,6L17,2V5H5V11H7V7Z'
+export const mdiRepeatOnce =
+  'M13,15V9H12L10,10V11H11.5V15M17,17H7V14L3,18L7,22V19H19V13H17M7,7H17V10L21,6L17,2V5H5V11H7V7Z'
+export const mdiSkipNext = 'M16,18H18V6H16M6,6L14.5,12L6,18V6Z'
+export const mdiSkipPrevious = 'M6,6H8V18H6M9.5,12L18,18V6Z'
+export const mdiShuffleVariant =
+  'M17,3L22.25,7.5L17,12L22.25,16.5L17,21V18H14.26L11.44,15.18L13.56,13.06L15.5,15H17V12L17,9H15.5L6.5,18H2V15H5.26L14.26,6H17V3M2,6H6.5L9.32,8.82L7.2,10.94L5.26,9H2V6Z'
+export const mdiStop = 'M18,18H6V6H18V18Z'
+export const mdiVolumeHigh =
+  'M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z'
+export const mdiVolumeMute =
+  'M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z'
 export const mdiClockOutline =
   'M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z'
 export const mdiClose =
@@ -111,6 +130,19 @@ export const icons = {
   'mdi-check': mdiCheck,
   'mdi-chevron-left': mdiChevronLeft,
   'mdi-chevron-right': mdiChevronRight,
+  'mdi-chevron-down': mdiChevronDown,
+  'mdi-music-note': mdiMusicNote,
+  'mdi-pause': mdiPause,
+  'mdi-play': mdiPlay,
+  'mdi-playlist-music': mdiPlaylistMusic,
+  'mdi-repeat': mdiRepeat,
+  'mdi-repeat-once': mdiRepeatOnce,
+  'mdi-skip-next': mdiSkipNext,
+  'mdi-skip-previous': mdiSkipPrevious,
+  'mdi-shuffle-variant': mdiShuffleVariant,
+  'mdi-stop': mdiStop,
+  'mdi-volume-high': mdiVolumeHigh,
+  'mdi-volume-mute': mdiVolumeMute,
   'mdi-clock-outline': mdiClockOutline,
   'mdi-close': mdiClose,
   'mdi-close-circle': mdiCloseCircle,
