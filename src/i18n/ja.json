@@ -102,7 +102,7 @@
   "footer": {
     "rss": "RSS",
     "sitemap": "サイトマップ",
-    "running": "ブログ開設から {days} 日"
+    "running": "ブログ開設から {days} 日 {hours} 時間 {minutes} 分 {seconds} 秒"
   },
   "notFound": {
     "title": "404",

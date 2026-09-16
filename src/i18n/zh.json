@@ -102,7 +102,7 @@
   "footer": {
     "rss": "RSS",
     "sitemap": "Sitemap",
-    "running": "博客已运行 {days} 天"
+    "running": "博客已运行 {days} 天 {hours} 小时 {minutes} 分 {seconds} 秒"
   },
   "notFound": {
     "title": "404",

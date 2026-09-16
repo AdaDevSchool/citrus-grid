@@ -102,7 +102,7 @@
   "footer": {
     "rss": "RSS",
     "sitemap": "Sitemap",
-    "running": "Blog has been running for {days} days"
+    "running": "Blog has been running for {days}d {hours}h {minutes}m {seconds}s"
   },
   "notFound": {
     "title": "404",
