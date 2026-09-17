@@ -1,6 +1,7 @@
 ---
 title: "Markdown语法样例"
 slug: markdown-yu-fa-yang-li
+index: 2
 description: "展示 Markdown 语法的各种类型和示例"
 category: "示例"
 tags: [Markdown]

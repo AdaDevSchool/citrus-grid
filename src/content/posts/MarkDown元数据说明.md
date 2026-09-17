@@ -1,6 +1,7 @@
 ---
 title: "MarkDown元数据说明"
 slug: markdown-meta-data
+index: 3
 description: "展示 Markdown 元数据的使用方法"
 category: "示例"
 tags: [Markdown]

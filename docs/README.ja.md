@@ -36,7 +36,7 @@
 
 ---
 
-## 🚀 クイックスタート
+## クイックスタート
 
 ### 環境要件
 
@@ -47,42 +47,42 @@
 
 1. リポジトリをクローンします：
 
-```bash
-git clone https://github.com/rightdoor/citrus-grid.git
-cd citrus-grid
-```
+    ```bash
+    git clone https://github.com/rightdoor/citrus-grid.git
+    cd citrus-grid
+    ```
 
 2. 依存関係をインストールします：
 
-```bash
-# このプロジェクトは pnpm を使用します。インストールされていない場合は先にインストールしてください。
-npm install -g pnpm
+    ```bash
+    # このプロジェクトは pnpm を使用します。インストールされていない場合は先にインストールしてください。
+    npm install -g pnpm
 
-pnpm install
-```
+    pnpm install
+    ```
 
 3. ブログを設定します：
 
-`src/site.config.ts` を編集して、ブログの設定をカスタマイズします。
+    `src/site.config.ts` を編集して、ブログの設定をカスタマイズします。
 
 4. 開発サーバーを起動します：
 
-```bash
-pnpm dev
-```
+    ```bash
+    pnpm dev
+    ```
 
-`http://localhost:4321` にアクセスしてブログをプレビューします。
+    `http://localhost:4321` にアクセスしてブログをプレビューします。
 
 ### プラットフォームへのデプロイ
 
 - [Astro デプロイガイド](https://docs.astro.build/guides/deploy/)
 - Web デプロイの場合は、`pnpm build` でサイトをビルドし、生成された `dist` ディレクトリを対象プラットフォームにデプロイしてください。
 
-## 📖 設定説明
+## 設定説明
 
 詳細は設定ファイル [site.config.ts](../src/site.config.ts) を参照してください。
 
-## ⚙️ 記事の Frontmatter
+## 記事の Frontmatter
 
 ```markdown
 ---
@@ -110,7 +110,7 @@ draft: false
 | `updated` | いいえ | 2026-01-01 00:01:03 | 更新日時。形式は `YYYY-MM-DD HH:mm:ss` で、起動時およびビルド時に、スクリプトによってファイルの変更時刻に基づいて自動的に書き込まれます（site.config.tsで無効化できます） |
 | `draft` | いいえ | false | 下書きかどうか。自動生成されません |
 
-## 🧞 コマンド一覧
+## コマンド一覧
 
 | コマンド | 説明 |
 | --- | --- |
@@ -156,6 +156,25 @@ draft: false
 デフォルトで同梱されている統計プラグインは `visitor-stats.ts` で、プロジェクトは [visitor-stats](https://github.com/rightdoor/visitor-stats) にあります。Cloudflare Workers に統計サービスを自前でデプロイする必要があります。
 
 カスタム統計プラグインの詳細は [統計プラグイン](../src/stats/usageRules.md) を参照してください。
+
+## 二次開発ドキュメント
+
+テーマをカスタマイズする場合（メインカラーの変更、レイアウト調整、コンポーネント追加、コメント／統計の導入、ビルドのトラブルシューティング）は [`../src/content/posts/all/00-index.md`](../src/content/posts/all/00-index.md) を参照してください：
+
+| ドキュメント | 内容 |
+| --- | --- |
+| [00-index.md](../src/content/posts/all/00-index.md) | 概要とカスタマイズ作業の索引 |
+| [01-项目结构.md](../src/content/posts/all/01-项目结构.md) | ディレクトリ構成、技術スタック、ビルドパイプライン、データフロー |
+| [02-组件说明.md](../src/content/posts/all/02-组件说明.md) | 全コンポーネントの Props 一覧、DOM 構造、イベント規約、アイコンシステム |
+| [03-主题与样式定制.md](../src/content/posts/all/03-主题与样式定制.md) | `--wp-*` 変数の一覧、ダークモード、配色変更の手順 |
+| [04-站点配置.md](../src/content/posts/all/04-站点配置.md) | `site.config.ts` ほか 5 つの設定ファイルのパラメータ一覧 |
+| [05-内容与Markdown.md](../src/content/posts/all/05-内容与Markdown.md) | Frontmatter 一覧、Markdown プラグイン構成、画像と相対リンク |
+| [06-构建与脚本.md](../src/content/posts/all/06-构建与脚本.md) | 6 つのビルドスクリプト、出力構成、デプロイ |
+| [07-页面与路由.md](../src/content/posts/all/07-页面与路由.md) | ルート一覧、SEO、i18n の現状と拡張方法 |
+| [08-插件系统.md](../src/content/posts/all/08-插件系统.md) | コメント／統計プラグインの契約、音楽プレイヤー |
+| [09-常见改造与排错.md](../src/content/posts/all/09-常见改造与排错.md) | 目的別の改造レシピ、FAQ、チェックリスト |
+
+> DeepSeek-V4.1-Flash に基づく検索生成＋手動修正。参考までに。
 
 ## ライセンス
 

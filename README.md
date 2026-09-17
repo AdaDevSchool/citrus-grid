@@ -36,7 +36,7 @@
 
 ---
 
-## 🚀 快速开始
+## 快速开始
 
 ### 环境要求
 
@@ -47,42 +47,42 @@
 
 1. 克隆仓库：
 
-```bash
-git clone https://github.com/rightdoor/citrus-grid.git
-cd citrus-grid
-```
+    ```bash
+    git clone https://github.com/rightdoor/citrus-grid.git
+    cd citrus-grid
+    ```
 
 2. 安装依赖
 
-```bash
-# 本项目使用 pnpm 安装依赖，如果没有安装请先安装
-npm install -g pnpm
+    ```bash
+    # 本项目使用 pnpm 安装依赖，如果没有安装请先安装
+    npm install -g pnpm
 
-pnpm install
-```
+    pnpm install
+    ```
 
 3. 配置博客：
 
-编辑 `src/site.config.ts` 自定义博客设置
+    编辑 `src/site.config.ts` 自定义博客设置
 
 4. 启动开发服务器：
 
-```bash
-pnpm dev
-```
+    ```bash
+    pnpm dev
+    ```
 
-访问 `http://localhost:4321` 即可查看博客效果
+    访问 `http://localhost:4321` 即可查看博客效果
 
 ### 平台托管部署
 
 - [Astro 部署指南](https://docs.astro.build/guides/deploy/)
 - 网页部署请使用 `pnpm build` 命令构建网站，随后将 `dist` 目录部署至目标平台。
 
-## 📖 配置说明
+## 配置说明
 
 详细内容请查看配置文件 [site.config.ts](src/site.config.ts)。
 
-## ⚙️ 文章 Frontmatter
+## 文章 Frontmatter
 
 ```markdown
 ---
@@ -110,7 +110,7 @@ draft: false
 | `updated` | 否 | 2026-01-01 00:01:03 | 文章更新时间，格式为`YYYY-MM-DD HH:mm:ss`，启动和构建时由脚本按文件修改时间自动写入（可在 `site.config.ts` 关闭） |
 | `draft` | 否 | false | 是否草稿，不自动生成 |
 
-## 🧞 命令说明
+## 命令说明
 
 | 命令 | 作用 |
 | --- | --- |
@@ -156,6 +156,25 @@ draft: false
 当前自带统计插件有 `visitor-stats.ts`，项目地址为 [visitor-stats](https://github.com/rightdoor/visitor-stats)。需要在cloudflare worker中自行部署统计服务。
 
 支持自定义统计插件，详细参考 [统计插件](src/stats/使用规则.md)。
+
+## 二次开发文档
+
+需要改造主题（换主色、改布局、加组件、接入评论/统计、排查构建问题）请查阅 [`src/content/posts/all/00-index.md`](src/content/posts/all/00-index.md)：
+
+| 文档 | 内容 |
+| --- | --- |
+| [00-index.md](src/content/posts/all/00-index.md) | 总览与二次开发任务索引 |
+| [01-项目结构.md](src/content/posts/all/01-项目结构.md) | 目录树、技术栈、构建流水线、数据流 |
+| [02-组件说明.md](src/content/posts/all/02-组件说明.md) | 全部组件 Props 表、DOM 结构、事件协议、图标系统 |
+| [03-主题与样式定制.md](src/content/posts/all/03-主题与样式定制.md) | `--wp-*` 变量全表、暗色模式、换肤步骤 |
+| [04-站点配置.md](src/content/posts/all/04-站点配置.md) | `site.config.ts` 等 6 个配置文件的参数表 |
+| [05-内容与Markdown.md](src/content/posts/all/05-内容与Markdown.md) | Frontmatter 表、markdown 插件链、图片与相对链接 |
+| [06-构建与脚本.md](src/content/posts/all/06-构建与脚本.md) | 6 个构建脚本、产物结构、部署 |
+| [07-页面与路由.md](src/content/posts/all/07-页面与路由.md) | 路由表、SEO、i18n 现状与扩展 |
+| [08-插件系统.md](src/content/posts/all/08-插件系统.md) | 评论 / 统计插件契约、音乐播放器 |
+| [09-常见改造与排错.md](src/content/posts/all/09-常见改造与排错.md) | 任务式改造速查、FAQ、自检清单 |
+
+> 基于 `DeepSeek-V4.1-Flash` 检索生成+手动修改，仅供参考。
 
 ## License
 

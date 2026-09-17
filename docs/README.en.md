@@ -36,7 +36,7 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Environment Requirements
 
@@ -47,42 +47,42 @@
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/rightdoor/citrus-grid.git
-cd citrus-grid
-```
+    ```bash
+    git clone https://github.com/rightdoor/citrus-grid.git
+    cd citrus-grid
+    ```
 
 2. Install dependencies
 
-```bash
-# This project uses pnpm for dependency installation. Install it first if you don't have it.
-npm install -g pnpm
+    ```bash
+    # This project uses pnpm for dependency installation. Install it first if you don't have it.
+    npm install -g pnpm
 
-pnpm install
-```
+    pnpm install
+    ```
 
 3. Configure the blog:
 
-Edit `src/site.config.ts` to customize blog settings.
+    Edit `src/site.config.ts` to customize blog settings.
 
 4. Start the development server:
 
-```bash
-pnpm dev
-```
+    ```bash
+    pnpm dev
+    ```
 
-Visit `http://localhost:4321` to preview the blog.
+    Visit `http://localhost:4321` to preview the blog.
 
 ### Platform Deployment
 
 - [Astro Deployment Guide](https://docs.astro.build/guides/deploy/)
 - For web deployment, build the site with `pnpm build`, then deploy the `dist` directory to your target platform.
 
-## 📖 Configuration Guide
+## Configuration Guide
 
 For details, see the configuration file [site.config.ts](../src/site.config.ts).
 
-## ⚙️ Article Frontmatter
+## Article Frontmatter
 
 ```markdown
 ---
@@ -110,7 +110,7 @@ draft: false
 | `updated` | No | 2026-01-01 00:01:03 | Last update time, format `YYYY-MM-DD HH:mm:ss`, automatically written by scripts during startup and build, based on file modification times (can be disabled in site.config.ts) |
 | `draft` | No | false | Whether it is a draft, not auto-generated |
 
-## 🧞 Commands Reference
+## Commands Reference
 
 | Command | Purpose |
 | --- | --- |
@@ -156,6 +156,25 @@ Supports global and per‑article PV/UV statistics, with reserved interfaces.
 The built‑in statistics plugin is `visitor-stats.ts`, project repository: [visitor-stats](https://github.com/rightdoor/visitor-stats). You need to deploy the statistics service yourself on Cloudflare Workers.
 
 For custom statistics plugins, see [Statistics Plugin](../src/stats/usageRules.md).
+
+## Secondary Development Docs
+
+To customize the theme (change the accent color, adjust the layout, add components, plug in comments/statistics, or debug the build), see [`../src/content/posts/all/00-index.md`](../src/content/posts/all/00-index.md):
+
+| Document | Contents |
+| --- | --- |
+| [00-index.md](../src/content/posts/all/00-index.md) | Overview and an index of common customization tasks |
+| [01-项目结构.md](../src/content/posts/all/01-项目结构.md) | Directory tree, tech stack, build pipeline, data flow |
+| [02-组件说明.md](../src/content/posts/all/02-组件说明.md) | Props tables for every component, DOM structure, event protocol, icon system |
+| [03-主题与样式定制.md](../src/content/posts/all/03-主题与样式定制.md) | Full `--wp-*` variable reference, dark mode, re-theming steps |
+| [04-站点配置.md](../src/content/posts/all/04-站点配置.md) | Parameter tables for `site.config.ts` and the other 5 config files |
+| [05-内容与Markdown.md](../src/content/posts/all/05-内容与Markdown.md) | Frontmatter reference, Markdown plugin chain, images and relative links |
+| [06-构建与脚本.md](../src/content/posts/all/06-构建与脚本.md) | The 6 build scripts, output structure, deployment |
+| [07-页面与路由.md](../src/content/posts/all/07-页面与路由.md) | Route table, SEO, i18n status and how to extend it |
+| [08-插件系统.md](../src/content/posts/all/08-插件系统.md) | Comment / statistics plugin contracts, music player |
+| [09-常见改造与排错.md](../src/content/posts/all/09-常见改造与排错.md) | Task-oriented recipes, FAQ, pre-flight checklist |
+
+> Retrieval-generated based on DeepSeek-V4.1-Flash + manually edited; for reference only.
 
 ## License
 
