@@ -36,13 +36,14 @@ function pages(): (number | '...')[] {
   totalPages > 1 && (
     <div class="mt-5 flex items-center justify-center gap-1 text-sm">
       {currentPage <= 1 ? (
-        <span
+        <button
+          type="button"
           class="pg-btn pg-nav pg-disabled inline-flex h-8 min-w-8 items-center justify-center rounded px-2"
-          aria-disabled="true"
+          disabled
           aria-label={t('pagination.prev')}
         >
           <Icon d={mdiChevronLeft} />
-        </span>
+        </button>
       ) : (
         <a
           href={pageUrl(currentPage - 1)}
