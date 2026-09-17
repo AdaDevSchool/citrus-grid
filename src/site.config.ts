@@ -28,9 +28,9 @@ export const siteConfig = {
   url: 'https://citrusgrid.pages.dev',
 
   // 站点信息 Site info
-  title: 'CitrusGrid',
-  subtitle: 'A pure static Astro blog theme',
-  description: '这是一个基于 Astro 架构和 CitrusGrid主题的轻量级静态博客。',
+  title: 'ADA Devs',
+  subtitle: 'Refuerzo en Ciencias Exactas e Idiomas',
+  description: 'Convirtiendo lo complejo en sencillo.',
 
   // 首页卡片的头像和网站图标 Logo ， public/ 下的静态路径，以 / 开头
   // Avatar and site logo for the home profile card. Static paths under public/, starting with /
@@ -39,11 +39,11 @@ export const siteConfig = {
   logo: '/logo.webp',
 
   // 作者 Author name
-  author: 'example name',
+  author: 'Refuerzo en Ciencias Exactas y Lenguas.',
 
   // 默认语言： zh 、 ja 、 en
   // Default language: zh, ja, en
-  defaultLang: 'zh' as 'zh' | 'ja' | 'en',
+  defaultLang: 'en' as 'en' | 'ja' | 'en',
 
   // 默认主题： auto 、 light 、 dark
   // Default theme: auto, light, dark
