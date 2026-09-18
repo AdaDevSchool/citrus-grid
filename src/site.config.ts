@@ -39,7 +39,7 @@ export const siteConfig = {
   logo: '/logo.webp',
 
   // 作者 Author name
-  author: 'Refuerzo en Ciencias Exactas y Lenguas.',
+  author: 'Refuerzo en Ciencias Exactas e Idiomas.',
 
   // 默认语言： zh 、 ja 、 en
   // Default language: zh, ja, en
